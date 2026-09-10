@@ -1,0 +1,150 @@
+{
+  "tool": "image_gen.imagegen (integrated)",
+  "purpose": "Illustrative placeholders, not official Brutona photography",
+  "assets": [
+    {
+      "id": "linguica-tradicional",
+      "prompt": "Generate one photorealistic illustrative product photograph for a Brazilian artisan charcuterie website. Subject: a fresh uncooked pork sausage coiled naturally, whole coil fully visible on a simple off-white ceramic plate, no garnish indicating a specific flavor. Square 1024x1024 composition, warm neutral daylight, clean light stone surface, natural casing and food texture, subtle shadows, premium but honest food editorial style. This is a generic placeholder, not a photo of a real brand product. No text, no labels, no logos, no packaging, no faces, no collage. Save as a project asset for linguica-tradicional.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-b92c780c-e82a-48d5-837d-5c62684b3ce3.png",
+      "src": "/generated/linguica-tradicional.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "kit-presente-caixa",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: a conceptual kraft gift box, open, with a modest assortment of wrapped smoked pork delicacies in plain unlabeled paper and a simple cotton cord. Do not imply an exact commercial bundle; no promotional props.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-1a2dd79c-0714-47fd-b1a6-740217b4549f.png",
+      "src": "/generated/kit-presente-caixa.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "linguica-alho-poro",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: fresh uncooked pork sausage links on a simple ceramic plate. Natural pale pink casing, no exaggerated visible ingredients or garnish claiming a flavor.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-b078a907-9b1a-4615-ab42-6b2906ad6414.png",
+      "src": "/generated/linguica-alho-poro.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "linguica-pernil-defumada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: whole smoked pork sausage links with a warm bronze casing, one cut end showing a coarse pork interior, on a simple plate.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-613370b3-26dc-49e4-bfda-ed0efb7c5357.png",
+      "src": "/generated/linguica-pernil-defumada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "orelhinha-defumada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: smoked pig ear, recognizably a thin folded ear-shaped pork cut with textured golden brown skin, presented as a prepared charcuterie ingredient, clean food photography.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-75f811c6-3067-450c-bb43-9bf9230b7d7a.png",
+      "src": "/generated/orelhinha-defumada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "pezinho-defumado",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: smoked pork trotters, recognizable small split pork feet with golden brown skin, cleaned and prepared culinary ingredient on a white plate, appetizing neutral presentation.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-cd8ef108-d535-4ec5-8c9a-5b902dcabe96.png",
+      "src": "/generated/pezinho-defumado.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "papada-defumada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: smoked pork jowl, a compact slab with characteristic thick creamy fat and thin streaks of meat, lightly golden smoked exterior, two slices alongside on a board.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-b403e3f6-9a6b-42a9-9e18-0b90bde2c883.png",
+      "src": "/generated/papada-defumada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "frango-defumado",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: one whole smoked chicken with deep golden skin, wings tucked, full bird clearly visible on a white ceramic platter. No side dishes.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-d6115011-def2-45a0-b080-84131dd044de.png",
+      "src": "/generated/frango-defumado.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "kit-feijoada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: conceptual feijoada ingredient assortment of smoked pork cuts and a piece of smoked sausage, on a small wooden board beside a modest bowl of dry black beans. No cooked stew, no claims of precise commercial contents.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-999ef02b-c7dd-43c0-ae1d-6c037d71c72c.png",
+      "src": "/generated/kit-feijoada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "linguica-apimentada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: fresh uncooked pork sausage links on a plain ceramic plate. Natural pale pink casing, restrained seasoning flecks only, no chili garnish or invented exaggerated coloring.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-9ea250e9-2b23-46c1-8d49-d6a654bfe943.png",
+      "src": "/generated/linguica-apimentada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "linguica-jilo",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: fresh uncooked pork sausage links on a simple ceramic plate. Natural coarse pork filling, pale pink casing, no invented conspicuous green filling, no added vegetables.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-1780df2c-2363-48f3-9b86-51a97aa7e607.png",
+      "src": "/generated/linguica-jilo.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "copalombo-maturado",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: a cured and smoked pork collar charcuterie piece, marbled ruby pork meat with fine creamy fat, several thin translucent slices arranged naturally beside the small intact piece, not bacon.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-a7dae5fb-36ca-4402-8d1e-82e66e50ea01.png",
+      "src": "/generated/copalombo-maturado.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "manta-suina",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: one flat boneless pork belly cut, raw pink meat and creamy fat layers, naturally rectangular sheet of pork on a plain board. No marinade, no garnish, no cooking claims.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-b85abd78-40d0-463c-a59a-652ff2812878.png",
+      "src": "/generated/manta-suina.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "copalombo-medalhao",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: thick round medallions of smoked pork collar, warm smoked rim, pink cooked interior with delicate marbling, three generous slices on a white plate, no bacon wrapping.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-4bbab2d5-51be-46f0-a0ce-480b165c14b3.png",
+      "src": "/generated/copalombo-medalhao.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "costelinha-defumada",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: a compact rack of smoked pork ribs with visible rib bones and naturally golden brown exterior, dry smoked appearance without barbecue sauce or glaze.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-103bd44a-cc7d-4516-9f91-0bdead23938f.png",
+      "src": "/generated/costelinha-defumada.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "linguica-seca",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Square product composition: firm dry-cured pork sausage with dark reddish natural casing, one whole short link and a few cut slices revealing dense coarse pork filling. No white artificial mold coating.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-6a42ff07-7312-43c9-aab3-539cb082d02a.png",
+      "src": "/generated/linguica-seca.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "processo",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Landscape editorial composition, 3:2 aspect ratio: close view of clean hands carefully tying plain cotton twine around artisan pork sausage on a food preparation table, seasoning bowls softly in background, focus on craft and natural materials. No face, no identifiable workshop, no signage, no claim of a specific establishment.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-d352e022-1539-4e40-bb8a-bdc8a191616d.png",
+      "src": "/generated/processo.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "corporativo",
+      "prompt": "Generate one photorealistic illustrative food photograph for a Brazilian artisan charcuterie website. Natural food textures, warm neutral daylight, clean light stone surface with a simple off-white ceramic plate or small wooden board, restrained styling. Show the complete main subject clearly with breathing room. Generic conceptual placeholder, not a real brand product. No text, logos, labels, watermarks, faces, or collage. Landscape editorial composition, 3:2 aspect ratio: conceptual artisanal gift of charcuterie, plain kraft box and unbranded paper-wrapped smoked food items with simple cotton twine, modest tasteful presentation on a pale table, no fixed bundle, no pricing, no corporate logos.",
+      "originalFile": "/home/marcelo/.codex/generated_images/01a0874b-2453-7713-8b7d-e9ead5c9d4a5/exec-52c93d70-6e9f-47a0-b6bd-35a1faea31e2.png",
+      "src": "/generated/corporativo.png",
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}

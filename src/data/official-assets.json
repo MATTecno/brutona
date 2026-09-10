@@ -1,0 +1,196 @@
+{
+  "bacon": {
+    "src": "/official/bacon.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Bacon da Brutona em peça e fatias sobre uma tábua",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/22_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "linguica-tradicional": {
+    "src": "/official/linguica-tradicional.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Linguiça tradicional da Brutona, crua e preparada",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/96_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "linguica-apimentada": {
+    "src": "/official/linguica-apimentada.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Linguiça apimentada da Brutona, acompanhada de pimentas",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/106_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "linguica-jilo": {
+    "src": "/official/linguica-jilo.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Linguiça com jiló da Brutona, crua e preparada, com jilós na composição",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/116_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "linguica-seca": {
+    "src": "/official/linguica-seca.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Linguiça suína seca da Brutona em embalagem com rótulo identificado",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/21_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "linguica-pernil-defumada": {
+    "src": "/official/linguica-pernil-defumada.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Linguiça suína defumada da Brutona em embalagem com rótulo identificado",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/95_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "copalombo-maturado": {
+    "src": "/official/copalombo-maturado.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Copalombo da Brutona em peça e fatias finas",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/15_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "copalombo-medalhao": {
+    "src": "/official/copalombo-medalhao.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Medalhões de copalombo da Brutona preparados sobre uma tábua",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/161_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "manta-suina": {
+    "src": "/official/manta-suina.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Manta suína da Brutona preparada, fatiada e acompanhada de queijo",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/144_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false,
+    "note": "Sugestão de preparo. Consulte as opções de recheio."
+  },
+  "hero": {
+    "src": "/official/hero.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Tábua de charcutaria da Brutona com carnes, queijos e uvas sobre mesa de madeira",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/1_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "processo": {
+    "src": "/official/processo.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Peças de charcutaria da Brutona envolvidas em rede sobre uma tábua",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/69_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "corporativo": {
+    "src": "/official/corporativo.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Tábua de charcutaria da Brutona para compartilhar",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/1_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false,
+    "note": "Composição do ensaio oficial; não representa o conteúdo de um kit fechado."
+  },
+  "cris": {
+    "src": "/official/cris.webp",
+    "width": 1200,
+    "height": 1800,
+    "alt": "Chef Cris Vieira à mesa com os produtos da Brutona",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/CRISTINA/8_brutona.cristina.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "cris-retrato": {
+    "src": "/official/cris-retrato.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Retrato oficial de Chef Cris Vieira, fundadora da Brutona",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/CRISTINA/2_brutona.cristina.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "mesa": {
+    "src": "/official/mesa.webp",
+    "width": 1800,
+    "height": 1200,
+    "alt": "Feijoada, arroz e acompanhamentos na mesa do ensaio oficial da Brutona",
+    "source": "brutona_codex_brief/references/FOTOS CRISTINA PRODUTOS BRUTONA/PRODUTOS/40_brutona.produtos.jpg",
+    "origin": "official",
+    "provisional": false
+  },
+  "logo": {
+    "src": "/official/logo.svg",
+    "width": 984,
+    "height": 262,
+    "alt": "Brutona Charcutaria Artesanal",
+    "source": "brutona_codex_brief/references/BRUTONA/LOGOTIPO E VARIAÇÕES/LOGOTIPO PRINCIPAL + ÍCONE/SVG/Logotipo principal + ícone vermelho.svg",
+    "origin": "official",
+    "provisional": false
+  },
+  "logo-light": {
+    "src": "/official/logo-light.svg",
+    "width": 984,
+    "height": 262,
+    "alt": "Brutona Charcutaria Artesanal",
+    "source": "brutona_codex_brief/references/BRUTONA/LOGOTIPO E VARIAÇÕES/LOGOTIPO PRINCIPAL + ÍCONE/SVG/Logotipo principal + ícone bege.svg",
+    "origin": "official",
+    "provisional": false
+  },
+  "logo-mark": {
+    "src": "/official/logo-mark.svg",
+    "width": 284,
+    "height": 283,
+    "alt": "Brutona Charcutaria Artesanal",
+    "source": "brutona_codex_brief/references/BRUTONA/LOGOTIPO E VARIAÇÕES/ÍCONE/SVG/ÍCONE VERMELHO.svg",
+    "origin": "official",
+    "provisional": false
+  },
+  "historia": {
+    "src": "/official/historia.mp4",
+    "poster": "/official/historia-poster.webp",
+    "width": 720,
+    "height": 1280,
+    "title": "Cris conta sua história",
+    "source": "brutona_codex_brief/references/Vídeos/Lançamento Marca/CrisVieira_História.mov",
+    "origin": "official",
+    "provisional": false
+  },
+  "lancamento": {
+    "src": "/official/lancamento.mp4",
+    "poster": "/official/lancamento-poster.webp",
+    "width": 720,
+    "height": 1280,
+    "title": "Um novo capítulo",
+    "source": "brutona_codex_brief/references/Vídeos/Lançamento Marca/Crisvieira.MOV",
+    "origin": "official",
+    "provisional": false
+  },
+  "asmr": {
+    "src": "/official/asmr.mp4",
+    "poster": "/official/asmr-poster.webp",
+    "width": 720,
+    "height": 1280,
+    "title": "Um pouco do nosso dia a dia",
+    "source": "brutona_codex_brief/references/Vídeos/Brutona_Reels asmr.mov",
+    "origin": "official",
+    "provisional": false
+  }
+}

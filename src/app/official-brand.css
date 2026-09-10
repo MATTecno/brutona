@@ -1,0 +1,130 @@
+@font-face { font-family: "Unbounded"; src: url("/fonts/unbounded.ttf") format("truetype"); font-style: normal; font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("/fonts/figtree.ttf") format("truetype"); font-style: normal; font-weight: 300 900; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("/fonts/figtree-italic.ttf") format("truetype"); font-style: italic; font-weight: 300 900; font-display: swap; }
+
+/* Official palette and type; neutral UI colors remain separate from brand colors. */
+h1, h2 { font-weight: 700; line-height: 1.17; overflow-wrap: break-word; }
+h2 { font-size: 36px; }
+.official-logo { display: block; width: 190px; height: auto; flex-shrink: 0; }
+.brand-link { flex-shrink: 0; }
+.brand-link .official-logo { width: 172px; }
+.hero-brand { margin-bottom: 26px; }
+.hero-brand .official-logo { width: 300px; }
+.hero h1 { font-size: 58px; line-height: 1.12; max-width: 1000px; }
+.hero-content { padding-bottom: 24px; }
+.hero-description { color: white; }
+.hero-shade { background: linear-gradient(90deg, #11110feb 0%, #11110fbd 38%, #11110f20 82%), linear-gradient(0deg, #11110f80, transparent 35%); }
+.manifesto { position: relative; background: var(--brutona-pink); }
+.manifesto::after { content: ""; position: absolute; inset: auto 0 0; height: 14px; background: url("/official/pattern-pink.webp") center / 400px auto; }
+.manifesto h2 { font-size: 32px; }
+.manifesto-side { color: var(--brutona-brown); }
+.section-heading h2 { font-size: 34px; }
+.process-section, .how-to-order { background: var(--brutona-green); }
+.process-lead h2 { font-size: 62px; }
+.process-pillars p { color: white; }
+.process-pillars h3 { min-height: 45px; }
+.step-number { font-weight: 600; }
+.cris-section { background: var(--brutona-pink); color: var(--brutona-brown); }
+.cris-copy h2 { font-size: 38px; }
+.cris-copy .eyebrow, .cris-name .small-rule { color: var(--brutona-red); }
+.cris-image { aspect-ratio: 2 / 3; max-height: 660px; }
+.cris-image img { object-position: center 38%; }
+.cris-copy > p:not(.eyebrow) { margin-top: 24px; font-size: 16px; }
+.cris-origin { border-color: #3c2b2740; }
+.cris-origin .official-logo { width: 170px; }
+.cris-origin > span:last-child { color: var(--brutona-brown); }
+.brand-story { background: var(--brutona-light); }
+.story-grid { grid-template-columns: 1.15fr 1fr; align-items: start; gap: 90px; }
+.story-grid h2 { font-size: 36px; max-width: 590px; }
+.story-grid > div > .eyebrow { color: var(--brutona-red); }
+.story-paragraph { font-size: 16px; line-height: 1.85; }
+.corporate-copy h2 { font-size: 39px; }
+.corporate-copy > p:not(.eyebrow) { color: white; }
+.corporate-section .editorial-photo figcaption { opacity: 1; line-height: 1.6; }
+.instagram-section h2 { font-size: 28px; }
+.how-to-order h2 { font-size: 32px; }
+.how-to-order .section-heading .eyebrow { color: var(--brutona-pink); }
+.order-steps h3 { font-family: var(--font-display); font-weight: 300; font-size: 16px; }
+.location-section { background: #f2f4e6; }
+.final-cta h2 { font-size: 54px; }
+.site-footer { background: var(--brutona-brown); }
+.footer-wordmark { display: inline-block; }
+.footer-wordmark .official-logo { width: 210px; }
+.footer-main p, .footer-hours > div, .footer-bottom { color: var(--brutona-cream); }
+.catalog-intro { background: var(--brutona-pink); }
+.catalog-title-row h1 { font-size: 68px; }
+.catalog-title-row > p, .catalog-intro .price-notice, .catalog-intro .breadcrumb { color: var(--brutona-brown); }
+.modal-body h2 { font-size: 26px; }
+.catalog-contact h2 { font-size: 25px; }
+.brand-films { min-width: 0; }
+.film-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.film-tabs button { min-height: 64px; padding: 12px 10px; font-size: 12px; line-height: 1.45; font-weight: 600; border: 0; border-bottom: 3px solid transparent; background: transparent; }
+.film-tabs button[aria-selected="true"] { color: var(--brutona-red); border-bottom-color: var(--brutona-red); }
+.film-player { position: relative; width: min(100%, 350px); aspect-ratio: 9 / 16; margin-inline: auto; background: var(--brutona-dark); }
+.film-player video { width: 100%; height: 100%; object-fit: contain; }
+.film-play { position: absolute; width: 64px; height: 64px; left: calc(50% - 32px); top: calc(50% - 32px); display: grid; place-items: center; border-radius: 50%; border: 1px solid white; color: var(--brutona-red); background: var(--brutona-light); }
+.film-play:hover { background: var(--brutona-pink); }
+.film-error { position: absolute; inset: auto 12px 12px; padding: 12px; color: white; background: var(--brutona-red); font-size: 13px; }
+.film-description { margin-block: 18px 12px; font-size: 13px; line-height: 1.65; color: var(--muted); }
+
+@media (min-width: 1600px) { .hero h1 { font-size: 64px; } }
+@media (max-width: 1199px) {
+  .hero h1 { font-size: 48px; }
+  .section-heading h2 { font-size: 29px; }
+  .cris-copy h2 { font-size: 30px; }
+  .corporate-copy h2 { font-size: 31px; }
+  .story-grid { gap: 40px; }
+  .story-grid h2 { font-size: 30px; }
+  .instagram-section h2 { font-size: 22px; }
+  .catalog-title-row h1 { font-size: 56px; }
+}
+@media (max-width: 900px) {
+  .hero h1 { font-size: 40px; }
+  .manifesto-grid { grid-template-columns: 1fr; }
+  .process-lead h2 { font-size: 43px; }
+  .process-pillars h3 { min-height: 0; }
+  .cris-grid { gap: 28px; }
+  .cris-copy h2 { font-size: 27px; }
+  .cris-origin { flex-wrap: wrap; }
+  .story-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .story-grid h2 { font-size: 27px; }
+  .corporate-copy h2 { font-size: 28px; }
+  .instagram-section h2 { font-size: 21px; }
+  .final-cta h2 { font-size: 38px; }
+}
+@media (max-width: 639px) {
+  h2 { font-size: 27px; }
+  .brand-link .official-logo { width: 156px; }
+  .hero { min-height: 560px; }
+  .hero-inner { padding-top: 100px; }
+  .hero-brand { margin-bottom: 26px; }
+  .hero-brand .official-logo { width: 220px; }
+  .hero h1 { font-size: 25px; }
+  .hero h1 span { white-space: normal; }
+  .hero-description { margin-top: 22px; }
+  .hero-shade { background: linear-gradient(90deg, #11110fd9, #11110f80); }
+  .manifesto h2 { font-size: 27px; }
+  .section-heading h2 { font-size: 27px; }
+  .process-lead h2 { font-size: 46px; }
+  .cris-grid { display: grid; grid-template-columns: 1fr; }
+  .cris-copy h2 { font-size: 28px; }
+  .cris-image { aspect-ratio: 2 / 3; max-height: 560px; }
+  .story-grid { grid-template-columns: 1fr; gap: 32px; }
+  .story-grid h2 { font-size: 28px; }
+  .corporate-copy h2 { font-size: 29px; }
+  .instagram-section h2 { font-size: 18px; }
+  .how-to-order h2 { font-size: 27px; }
+  .order-steps h3 { font-size: 15px; }
+  .faq-grid h2 { font-size: 28px; }
+  .final-cta h2 { font-size: 34px; }
+  .catalog-title-row h1 { font-size: 39px; }
+  .modal-body h2 { font-size: 25px; }
+  .catalog-contact h2 { font-size: 23px; }
+}
+@media (max-width: 374px) {
+  .hero h1 { font-size: 23px; }
+  .hero-brand .official-logo { width: 200px; }
+  .catalog-title-row h1 { font-size: 35px; }
+  .instagram-section h2 { font-size: 16px; }
+  .final-cta h2 { font-size: 30px; }
+}

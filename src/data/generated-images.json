@@ -1,0 +1,92 @@
+{
+  "linguica-tradicional": {
+    "src": "/generated/linguica-tradicional.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "kit-presente-caixa": {
+    "src": "/generated/kit-presente-caixa.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "linguica-alho-poro": {
+    "src": "/generated/linguica-alho-poro.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "linguica-pernil-defumada": {
+    "src": "/generated/linguica-pernil-defumada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "orelhinha-defumada": {
+    "src": "/generated/orelhinha-defumada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "pezinho-defumado": {
+    "src": "/generated/pezinho-defumado.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "papada-defumada": {
+    "src": "/generated/papada-defumada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "frango-defumado": {
+    "src": "/generated/frango-defumado.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "kit-feijoada": {
+    "src": "/generated/kit-feijoada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "linguica-apimentada": {
+    "src": "/generated/linguica-apimentada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "linguica-jilo": {
+    "src": "/generated/linguica-jilo.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "copalombo-maturado": {
+    "src": "/generated/copalombo-maturado.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "manta-suina": {
+    "src": "/generated/manta-suina.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "copalombo-medalhao": {
+    "src": "/generated/copalombo-medalhao.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "costelinha-defumada": {
+    "src": "/generated/costelinha-defumada.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "linguica-seca": {
+    "src": "/generated/linguica-seca.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "processo": {
+    "src": "/generated/processo.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "corporativo": {
+    "src": "/generated/corporativo.png",
+    "width": 1536,
+    "height": 1024
+  }
+}
