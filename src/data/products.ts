@@ -1,5 +1,4 @@
 import { type Photo } from "./assets";
-import { generatedProductPhoto } from "./generated";
 import { officialProductPhotos } from "./official";
 
 export type ProductCategory = "linguicas" | "defumados" | "suinos" | "kits" | "especiais";
@@ -24,8 +23,8 @@ export const categoryLabels: Record<ProductCategory, string> = {
 export const categoryOrder: ProductCategory[] = ["linguicas", "defumados", "suinos", "kits", "especiais"];
 export const priceNotice = "Preços sujeitos a alteração. Consulte disponibilidade.";
 
-// TODO: confirm prices, editorial categories and individual descriptions before publication.
-// Source: BRUTONA_SITE_BRIEF.md, section 36. Generated photos are illustrative only.
+// Prices and units approved by the owner; categories remain editorial.
+// Independent approved contracts live in tests/fixtures/approved-content.json.
 const seed: Array<[string, string, ProductCategory, number, Product["priceUnit"], boolean]> = [
   ["kit-presente-caixa", "Kit Presente Caixa", "kits", 119.90, "kit", true],
   ["bacon", "Bacon", "defumados", 59.90, "kg", true],
@@ -47,7 +46,7 @@ const seed: Array<[string, string, ProductCategory, number, Product["priceUnit"]
 ];
 
 export const products: Product[] = seed.map(([slug, name, category, price, priceUnit, featured]) => {
-  const photo = officialProductPhotos[slug] ?? generatedProductPhoto(slug, name);
+  const photo = officialProductPhotos[slug];
   return { id: slug, slug, name, category, price, priceUnit, featured, active: true, image: photo?.src ?? "", photo };
 });
 

@@ -2,6 +2,7 @@
   "name": "brutona",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": "22.x" },
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
@@ -9,7 +10,8 @@
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "audit:references": "tsx scripts/audit-references.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",

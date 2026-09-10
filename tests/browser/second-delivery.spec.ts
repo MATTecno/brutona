@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import { build } from "esbuild";
 import { readFileSync } from "node:fs";
 
@@ -47,18 +47,39 @@ test("new sections, corporate links, FAQ and both navigation surfaces", async ({
   await expect(page.getByRole("dialog")).not.toBeVisible();
 });
 
-test("generated photos remain identified in cards, modal and failure state", async ({ page }) => {
+test("context photos retain clear captions in cards, modal and failure state", async ({ page }) => {
   await page.goto("/catalogo");
-  await expect(page.locator(".product-card .illustrative-badge")).toHaveCount(8);
-  await page.getByRole("button", { name: "Ver detalhes de Kit Presente Caixa", exact: true }).click();
-  await expect(page.getByRole("dialog").getByText("Imagem ilustrativa", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Fechar detalhes" }).click();
+  await expect(page.getByText("Imagem ilustrativa", { exact: true })).toHaveCount(0);
+  for (const [id, caption] of [
+    ["kit-presente-caixa", "Sugestão de apresentação. Consulte a composição do kit."],
+    ["linguica-alho-poro", "Foto da linha de linguiças. Sabor não representado."],
+    ["kit-feijoada", "Sugestão de preparo. Não representa o conteúdo do kit."],
+  ]) {
+    const card = page.locator(`[data-product-id="${id}"]`);
+    await expect(card.getByText(caption, { exact: true })).toBeVisible();
+    await expect(card.getByRole("button")).toHaveAccessibleDescription(caption);
+    await card.getByRole("button").click();
+    await expect(page.getByRole("dialog").getByText(caption, { exact: true })).toBeVisible();
+    await expect(page.getByRole("dialog")).toHaveAccessibleDescription(`Preços sujeitos a alteração. Consulte disponibilidade. ${caption}`);
+    await page.getByRole("button", { name: "Fechar detalhes" }).click();
+  }
+  const noPhoto = page.locator('[data-product-id="orelhinha-defumada"]');
+  await expect(noPhoto.getByText("Foto em breve")).toBeVisible();
+  await noPhoto.getByRole("button").click();
+  await expect(page.getByRole("dialog").getByText("Foto em breve")).toBeVisible();
+  await expect(page.getByRole("dialog").getByRole("link", { name: "Pedir pelo WhatsApp" })).toHaveAttribute("href", /wa.me\/5531983820546/);
+  await page.keyboard.press("Escape");
   await page.route("**/_next/image?**", route => route.abort());
   await page.reload();
   const card = page.locator('[data-product-id="kit-presente-caixa"]');
   await expect(card.getByText("Foto em breve")).toBeVisible();
   await card.getByRole("button").click();
   await expect(page.getByRole("dialog").getByRole("link", { name: "Pedir pelo WhatsApp" })).toBeVisible();
+  await expect(page.getByRole("dialog").getByText("Sugestão de apresentação. Consulte a composição do kit.", { exact: true })).toBeVisible();
+  await page.keyboard.press("Escape");
+  await page.goto("/");
+  await page.getByRole("button", { name: "Ver detalhes de Kit Presente Caixa", exact: true }).click();
+  await expect(page.getByRole("dialog").getByText("Sugestão de apresentação. Consulte a composição do kit.", { exact: true })).toBeVisible();
 });
 
 for (const scenario of ["empty", "blocked", "loading", "success", "narrow"]) {

@@ -15,7 +15,7 @@ Raiz real das referências: `brutona_codex_brief/references/`. Os caminhos infor
 
 Os textos extraídos dos PDFs têm caracteres corrompidos em algumas fontes. A paleta, tipografia, restrições e introdução foram conferidas visualmente. Os mockups de embalagens/aplicações não foram usados como fotografias de produtos reais. As fotos históricas, inclusive imagens familiares, ficam no acervo: não foram usadas para deduzir parentesco, datas, diplomas ou prêmios.
 
-Estas informações substituem a paleta, as fontes e o logo provisórios descritos no brief original. O escopo comercial, os preços provisórios e o fluxo de WhatsApp permanecem iguais; materiais sem preço não validam preços atuais.
+Estas informações substituem a paleta, as fontes e o logo provisórios descritos no brief original. O responsável aprovou posteriormente os 17 preços e unidades atuais, confirmou Rua da Paciência, 207 e determinou a retirada das imagens geradas por IA. Essa aprovação, não os materiais sem preço, consolida os dados comerciais. O fluxo de WhatsApp permanece igual.
 
 ## Aplicação do manual
 
@@ -60,7 +60,20 @@ Todos os números abaixo referem-se a `PRODUTOS/<número>_brutona.produtos.jpg`.
 | Copalombo Medalhão Defumado | 161 | Série de medalhões preparados, com marca da rede |
 | Manta Suína | 144 | Série da manta preparada/fatiada com queijo; modal informa sugestão de preparo e consulta às opções |
 
-Sem correspondência segura: Kit Presente Caixa, Linguiça Suína de Alho Poró, Orelhinha Defumada, Pezinho Defumado, Papada Defumada, Frango Defumado, Kit Feijoada e Costelinha Defumada. Esses oito produtos mantêm o fallback gerado, explicitamente identificado. A foto 83 não foi assumida como costelinha; fotos de feijoada pronta não representam o kit de carnes; a manta com alho-poró não representa linguiça desse sabor. Novas etiquetas não autorizam cadastrar novos produtos/preços.
+O responsável autorizou fotos reais contextuais com identificação explícita para os produtos sem correspondência segura. As nove associações acima foram preservadas; essa decisão não transforma a origem oficial em certificação de corte, sabor ou composição comercial.
+
+| Produto | Tratamento aprovado | Legenda |
+|---|---|---|
+| Kit Presente Caixa | Foto 1, `usage: serving` | Sugestão de apresentação. Consulte a composição do kit. |
+| Linguiça Suína de Alho Poró | Foto 96, `usage: category` | Foto da linha de linguiças. Sabor não representado. |
+| Kit Feijoada | Foto 40, `usage: serving` | Sugestão de preparo. Não representa o conteúdo do kit. |
+| Orelhinha Defumada | Sem foto identificada | Foto em breve |
+| Pezinho Defumado | Sem foto identificada | Foto em breve |
+| Papada Defumada | Sem foto identificada | Foto em breve |
+| Frango Defumado | Sem foto identificada | Foto em breve |
+| Costelinha Defumada | Sem foto identificada | Foto em breve |
+
+As legendas contextuais aparecem no card e no modal, acompanhadas de alt correspondente. A foto 83 não foi assumida como costelinha; feijoada pronta não representa o kit de carnes; manta com alho-poró não representa linguiça desse sabor. Os cinco placeholders preservam preço e pedido. Novas etiquetas não autorizam cadastrar produtos/preços.
 
 Seleção editorial:
 
@@ -90,12 +103,14 @@ Textos e legendas incorporados aos quadros originais foram preservados, sem adic
 
 `scripts/prepare-official-assets.mjs` contém o mapa de origem, prepara os derivados e grava `src/data/official-assets.json`. Requer Node, Sharp e FFmpeg. Sem IA, remoção de fundo ou retoque de produtos/pessoas. Fotos são orientadas conforme EXIF, redimensionadas sem ampliação para até 1800 px e comprimidas em WebP; SVGs e fontes são copiados intactos. O enquadramento visual usa o componente existente e Next Image.
 
-`src/data/official.ts` define as associações usadas pela aplicação. As fotos substituem o fallback gerado por precedência dos dados. `public/generated` e os prompts anteriores foram preservados, mas as imagens substituídas não entram nas páginas. Nenhuma captura antiga é usada como logo, hero ou retrato atual.
+`src/data/official.ts` define as associações usadas pela aplicação e reutiliza os derivados nas três fotos contextuais. Fotos exatas podem substituir contexto apenas pelos dados, ajustando uso, legenda e alt. As 18 imagens de `public/generated` e os módulos do fallback gerado foram removidos; `docs/generated-images.json` é somente registro histórico dos prompts e caminhos desativados. Nenhum original fornecido foi alterado ou removido. Nenhuma captura antiga é usada como logo, hero ou retrato atual.
+
+O build e os testes obrigatórios funcionam sem os originais. `tests/fixtures/approved-content.json` registra contratos independentes de catálogo, FAQ, endereço, horários e mensagens. Os hashes em `tests/fixtures/official-logos.json` foram conferidos byte a byte com os SVGs originais. A auditoria `npm run audit:references` separa essa comparação local da CI e informa claramente se faltar o acervo. Ver README para execução e proteção da branch.
 
 ## Divergências e pendências
 
-- Endereço: catálogo e cartão de visitas trazem **Rua da Paciência, 207**. Brief e referência anterior da loja trazem **R. Cleves de Faria, 207**. Confirmação solicitada ao usuário; até resposta, preservado o endereço já validado. Não foi presumido que as ruas são equivalentes.
+- Endereço resolvido pelo responsável: **Rua da Paciência, 207**, conforme catálogo e cartão, mantendo Brumal, Santa Bárbara - MG e CEP 35960-000. A divergência do brief antigo fica apenas como histórico; não foi presumido que as ruas são equivalentes.
 - Telefone, Instagram e e-mail coincidem com o site. Horário de quarta confirmado posteriormente pelo responsável: 09:00–20:00.
-- Preços, estoque, recheios disponíveis, kits, formas de pagamento e condições de entrega não foram revalidados por este acervo.
+- Os 17 preços e unidades foram aprovados pelo responsável, mantendo o aviso de possível alteração. Estoque, recheios, composições de kits, pagamento e entrega não foram inferidos nem receberam condições novas.
 - A revisão visual usa 360, 390, 768, 1440 e 1920 px. Testes verificam integridade/procedência das mídias, fluxo do catálogo, teclado, vídeos, falhas e movimento reduzido.
-- Entrega local, sem publicação, domínio, novas rotas de negócio ou backend.
+- GitHub e Vercel já foram configurados pelo responsável. Esta entrega não publica nem altera hospedagem. Domínio informado: `brutonacharcutaria.com.br`, configuração pelo responsável. Sem novas rotas de negócio ou backend.

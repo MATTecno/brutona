@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 import AxeBuilder from "@axe-core/playwright";
 
 test("complete desktop product flow and accessible modal", async ({ page }) => {
@@ -72,6 +72,22 @@ test("missing photo and blocked map retain contact actions", async ({ page }) =>
   await expect(page.locator("#onde-encontrar").getByRole("link", { name: "(31) 98382-0546" })).toBeVisible();
   await page.getByRole("button", { name: "Ver detalhes de Bacon", exact: true }).click();
   await expect(page.getByRole("dialog").getByRole("link", { name: "Pedir pelo WhatsApp" })).toBeVisible();
+});
+
+test("approved address and Wednesday hours reach both routes and the map", async ({ page }) => {
+  for (const path of ["/", "/catalogo"]) {
+    await page.goto(path);
+    await expect(page.locator("footer")).toContainText("Rua da Paciência, 207");
+    await expect(page.locator("body")).not.toContainText("Cleves");
+  }
+  await page.goto("/#onde-encontrar");
+  const location = page.locator("#onde-encontrar");
+  await expect(location).toContainText("Rua da Paciência, 207");
+  await expect(location).toContainText("Quarta");
+  await expect(location).toContainText("09:00 – 20:00");
+  const routes = await page.getByRole("link", { name: "Abrir rotas no Google Maps" }).getAttribute("href");
+  expect(new URL(routes!).searchParams.get("query")).toBe("Rua da Paciência, 207, Brumal, Santa Bárbara - MG, 35960-000, Brasil");
+  await expect(location.locator("iframe")).toHaveAttribute("src", /Rua%20da%20Paci%C3%AAncia/);
 });
 
 for (const width of [360, 390, 768, 1440, 1920]) {

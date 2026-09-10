@@ -1,0 +1,48 @@
+{
+  "products": [
+    { "id": "kit-presente-caixa", "name": "Kit Presente Caixa", "price": 119.9, "priceUnit": "kit" },
+    { "id": "bacon", "name": "Bacon", "price": 59.9, "priceUnit": "kg" },
+    { "id": "linguica-alho-poro", "name": "Linguiça Suína de Alho Poró", "price": 49.9, "priceUnit": "kg" },
+    { "id": "linguica-pernil-defumada", "name": "Linguiça de Pernil Defumada", "price": 59.9, "priceUnit": "kg" },
+    { "id": "orelhinha-defumada", "name": "Orelhinha Defumada", "price": 39.9, "priceUnit": "kg" },
+    { "id": "pezinho-defumado", "name": "Pezinho Defumado", "price": 39.9, "priceUnit": "kg" },
+    { "id": "papada-defumada", "name": "Papada Defumada", "price": 39.9, "priceUnit": "kg" },
+    { "id": "frango-defumado", "name": "Frango Defumado", "price": 39.9, "priceUnit": "kg" },
+    { "id": "kit-feijoada", "name": "Kit Feijoada", "price": 49.9, "priceUnit": "kit" },
+    { "id": "linguica-tradicional", "name": "Linguiça Suína Tradicional", "price": 44.9, "priceUnit": "kg" },
+    { "id": "linguica-apimentada", "name": "Linguiça Suína Apimentada", "price": 45.9, "priceUnit": "kg" },
+    { "id": "linguica-jilo", "name": "Linguiça Suína com Jiló", "price": 49.9, "priceUnit": "kg" },
+    { "id": "copalombo-maturado", "name": "Copalombo Defumado e Maturado", "price": 18.9, "priceUnit": "100g" },
+    { "id": "manta-suina", "name": "Manta Suína", "price": 79.9, "priceUnit": "kg" },
+    { "id": "copalombo-medalhao", "name": "Copalombo Medalhão Defumado", "price": 79.9, "priceUnit": "kg" },
+    { "id": "costelinha-defumada", "name": "Costelinha Defumada", "price": 79.9, "priceUnit": "kg" },
+    { "id": "linguica-seca", "name": "Linguiça Seca", "price": 79.9, "priceUnit": "kg" }
+  ],
+  "faq": [
+    { "id": "pedido", "question": "Como faço um pedido?", "answer": "Os pedidos são combinados diretamente pelo WhatsApp da Brutona." },
+    { "id": "disponibilidade", "question": "Os produtos estão sempre disponíveis?", "answer": "Como a produção é artesanal, a disponibilidade pode variar. Confirme pelo WhatsApp." },
+    { "id": "precos", "question": "Os preços do site são atualizados?", "answer": "Os valores são informativos e podem sofrer alterações. Consulte disponibilidade e valor final antes do pedido." },
+    { "id": "empresas", "question": "Vocês trabalham com kits corporativos?", "answer": "Sim. Entre em contato pelo WhatsApp para consultar opções e disponibilidade." },
+    { "id": "localizacao", "question": "Onde fica a Brutona?", "answer": "Em Brumal, distrito de Santa Bárbara, Minas Gerais." }
+  ],
+  "brand": {
+    "address": "Rua da Paciência, 207, Brumal, Santa Bárbara - MG, 35960-000, Brasil",
+    "street": "Rua da Paciência, 207",
+    "city": "Brumal · Santa Bárbara, MG",
+    "postalCode": "35960-000",
+    "whatsapp": "5531983820546",
+    "hours": [
+      { "day": "Segunda", "time": "Fechado" },
+      { "day": "Terça", "time": "Fechado" },
+      { "day": "Quarta", "time": "09:00 – 20:00" },
+      { "day": "Quinta", "time": "09:00 – 20:00" },
+      { "day": "Sexta", "time": "09:00 – 20:00" },
+      { "day": "Sábado", "time": "09:00 – 20:00" },
+      { "day": "Domingo", "time": "09:00 – 12:00" }
+    ],
+    "messages": {
+      "generic": "Olá! Vim pelo site da Brutona e gostaria de fazer um pedido.",
+      "corporate": "Olá! Vim pelo site e gostaria de saber mais sobre os kits corporativos da Brutona."
+    }
+  }
+}

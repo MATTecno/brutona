@@ -13,10 +13,27 @@ export const officialPhotos = {
   logoLight: manifest["logo-light"] as Photo,
 };
 
-export const officialProductPhotos: Record<string, Photo> = Object.fromEntries(
-  ["bacon", "linguica-tradicional", "linguica-apimentada", "linguica-jilo", "linguica-seca", "linguica-pernil-defumada", "copalombo-maturado", "copalombo-medalhao", "manta-suina"]
-    .map(id => [id, manifest[id as keyof typeof manifest] as Photo]),
-);
+export const officialProductPhotos: Partial<Record<string, Photo>> = {
+  ...Object.fromEntries(
+    ["bacon", "linguica-tradicional", "linguica-apimentada", "linguica-jilo", "linguica-seca", "linguica-pernil-defumada", "copalombo-maturado", "copalombo-medalhao", "manta-suina"]
+      .map(id => [id, manifest[id as keyof typeof manifest] as Photo]),
+  ),
+  "kit-presente-caixa": {
+    ...manifest.hero, origin: "official", usage: "serving",
+    alt: "Tábua de charcutaria do ensaio da Brutona como sugestão de apresentação, não o conteúdo do Kit Presente Caixa",
+    note: "Sugestão de apresentação. Consulte a composição do kit.",
+  },
+  "linguica-alho-poro": {
+    ...manifest["linguica-tradicional"], origin: "official", usage: "category",
+    alt: "Foto da linha de linguiças da Brutona; não representa o sabor alho-poró",
+    note: "Foto da linha de linguiças. Sabor não representado.",
+  },
+  "kit-feijoada": {
+    ...manifest.mesa, origin: "official", usage: "serving",
+    alt: "Feijoada pronta com acompanhamentos como sugestão de preparo, não o conteúdo do Kit Feijoada",
+    note: "Sugestão de preparo. Não representa o conteúdo do kit.",
+  },
+};
 
 export type BrandFilm = { id: string; src: string; poster: string; title: string; description: string; source: string };
 export const brandFilms: BrandFilm[] = [

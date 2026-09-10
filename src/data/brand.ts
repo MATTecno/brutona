@@ -11,8 +11,8 @@ export const brand = {
   email: "contato@brutonacharcutaria.com.br",
   instagram: "https://www.instagram.com/brutonacharcutaria/",
   instagramHandle: "@brutonacharcutaria",
-  address: "R. Cleves De Faria, 207, Brumal, Santa Bárbara - MG, 35960-000, Brasil",
-  street: "R. Cleves De Faria, 207",
+  address: "Rua da Paciência, 207, Brumal, Santa Bárbara - MG, 35960-000, Brasil",
+  street: "Rua da Paciência, 207",
   city: "Brumal · Santa Bárbara, MG",
   postalCode: "35960-000",
   hours: [

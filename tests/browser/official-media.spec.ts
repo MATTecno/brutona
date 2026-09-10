@@ -1,6 +1,6 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./test";
 
-test("official fonts, logo and nine catalog photos replace provisional assets", async ({ page }) => {
+test("official fonts, logo and real catalog photos replace provisional assets", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", error => errors.push(error.message));
   await page.goto("/");
@@ -13,7 +13,8 @@ test("official fonts, logo and nine catalog photos replace provisional assets", 
   await expect(page.locator("header img")).toHaveAttribute("src", "/official/logo.svg");
   await page.goto("/catalogo");
   await expect(page.locator(".product-card")).toHaveCount(17);
-  await expect(page.locator(".product-card .illustrative-badge")).toHaveCount(8);
+  await expect(page.locator(".product-card img")).toHaveCount(12);
+  await expect(page.locator(".product-card .photo-placeholder")).toHaveCount(5);
   await page.getByRole("button", { name: "Ver detalhes de Bacon", exact: true }).click();
   await expect(page.getByRole("dialog").locator(".illustrative-badge")).toHaveCount(0);
   await expect(page.getByRole("dialog").locator("img")).toHaveAttribute("alt", /Bacon da Brutona/);

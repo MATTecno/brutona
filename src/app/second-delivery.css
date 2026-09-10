@@ -1,4 +1,4 @@
-.illustrative-badge { position: absolute; bottom: 17px; left: 14px; z-index: 1; padding: 4px 8px; max-width: calc(100% - 76px); border-radius: 3px; color: #36382f; background: #faf8f4; font-size: 10px; line-height: 1.5; }
+.product-photo-note { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .editorial-photo { margin: 0; min-width: 0; }
 .editorial-frame { aspect-ratio: 3 / 2; position: relative; overflow: hidden; }
 .editorial-photo figcaption { font-size: 10px; text-align: right; margin-top: 9px; color: inherit; opacity: .85; }

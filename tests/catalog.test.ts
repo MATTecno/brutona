@@ -1,25 +1,20 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import approved from "./fixtures/approved-content.json";
 import { products, featuredProducts, getCategories } from "../src/data/products";
 import { buildProductWhatsAppUrl, buildWhatsAppUrl } from "../src/lib/whatsapp";
-import { brand } from "../src/data/brand";
+import { brand, mapUrl, mapEmbedUrl } from "../src/data/brand";
 import { formatPrice } from "../src/lib/format";
 
-test("all 17 products match the source brief, including price and unit", () => {
-  const brief = readFileSync("brutona_codex_brief/BRUTONA_SITE_BRIEF.md", "utf8");
-  const seedSection = brief.split("# 36. Seed inicial do catálogo")[1].split("# 37.")[0];
-  const rows = seedSection.split("\n").filter(row => row.startsWith("| ") && row.includes("R$"));
-  assert.equal(rows.length, 17);
+test("all 17 products match the independently approved prices and units", () => {
+  assert.equal(approved.products.length, 17);
   assert.equal(products.length, 17);
   assert.equal(new Set(products.map(p => p.id)).size, 17);
-  for (const row of rows) {
-    const [, name, priceText] = row.split("|").map(cell => cell.trim());
-    const product = products.find(p => p.name.toLocaleLowerCase("pt-BR") === name.toLocaleLowerCase("pt-BR"));
-    assert.ok(product, `Missing product: ${name}`);
-    const [amount, unit] = priceText.replace("R$ ", "").split("/");
-    assert.equal(product.price, Number(amount.replace(",", ".")), name);
-    assert.equal(product.priceUnit, unit ?? "kit", name);
+  for (const expected of approved.products) {
+    const product = products.find(p => p.id === expected.id);
+    assert.ok(product, `Missing product: ${expected.id}`);
+    assert.deepEqual({ id: product.id, name: product.name, price: product.price, priceUnit: product.priceUnit }, expected);
+    assert.equal(product.slug, expected.id);
     assert.equal(product.active, true);
   }
 });
@@ -45,4 +40,13 @@ test("WhatsApp URL preserves accents and encodes reserved characters", () => {
 test("prices use Brazilian currency and Wednesday hours match owner confirmation", () => {
   assert.equal(formatPrice(18.9).replace(/\s/g, " "), "R$ 18,90");
   assert.equal(brand.hours.find(item => item.day === "Quarta")?.time, "09:00 – 20:00");
+});
+
+test("approved address, hours and messages remain consistent across contact URLs", () => {
+  for (const key of ["address", "street", "city", "postalCode", "whatsapp", "hours", "messages"] as const) {
+    assert.deepEqual(brand[key], approved.brand[key], key);
+  }
+  assert.equal(new URL(mapUrl).searchParams.get("query"), approved.brand.address);
+  assert.equal(new URL(mapEmbedUrl).searchParams.get("q"), approved.brand.address);
+  assert.equal(new URL(buildWhatsAppUrl(brand.messages.generic)).searchParams.get("text"), approved.brand.messages.generic);
 });

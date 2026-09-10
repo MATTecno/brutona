@@ -7,8 +7,7 @@ export type Photo = {
   origin: "reference" | "generated" | "official";
   source: string;
   provisional: boolean;
-  note?: string;
-};
+} & ({ usage?: "product"; note?: string } | { usage: "category" | "serving"; note: string });
 
 // TODO: replace reference screenshots with official high-resolution assets.
 // Crops are presentation-only; the original files remain unchanged.
