@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ArrowDown, MapPin, MessageCircle, Mail } from "lucide-react";
 import { brand } from "@/data/brand";
@@ -15,6 +16,35 @@ import { InstagramFeed } from "@/components/home/InstagramFeed";
 import { HowToOrder } from "@/components/home/HowToOrder";
 import { FAQ } from "@/components/home/FAQ";
 import { officialPhotos } from "@/data/official";
+
+const socialTitle = "Brutona | Charcutaria artesanal em Brumal";
+const socialDescription = "Conheça a Brutona, charcutaria artesanal em Brumal, Santa Bárbara, MG. Defumados, linguiças e kits. Pedidos pelo WhatsApp.";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "/",
+    siteName: "Brutona",
+    title: socialTitle,
+    description: socialDescription,
+    images: [
+      {
+        url: "/official/hero.webp",
+        width: 1800,
+        height: 1200,
+        alt: "Tábua de charcutaria da Brutona com carnes, queijos e uvas sobre mesa de madeira",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: socialTitle,
+    description: socialDescription,
+    images: ["/official/hero.webp"],
+  },
+};
 
 export default function Home() {
   const whatsappUrl = buildWhatsAppUrl(brand.messages.generic);

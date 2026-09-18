@@ -5,7 +5,10 @@ import "./official-brand.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
+const siteUrl = "https://brutonacharcutaria.com.br";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: { default: "Brutona | Charcutaria artesanal em Brumal", template: "%s | Brutona" },
   description: "Conheça a Brutona, charcutaria artesanal em Brumal, Santa Bárbara, MG. Defumados, linguiças e kits. Pedidos pelo WhatsApp.",
   icons: { icon: "/official/logo-mark.svg" },
